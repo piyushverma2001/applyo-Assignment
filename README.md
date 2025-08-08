@@ -41,12 +41,12 @@ npm install
 ```
 
 3. Set up environment variables:
-Create a `.env.local` file in the root directory:
+Create a `.env` file in the root directory:
 ```env
 NEXT_PUBLIC_OMDB_API_KEY=your_api_key_here
 ```
 
-**Note**: The application will work with a demo API key for testing, but for full functionality, you'll need to get your own API key from OMDb.
+**Note**: The application will work with a demo API key for testing, but for full functionality, you'll need to get your own API key from OMDb. The `.env` file is already in `.gitignore` for security.
 
 4. Run the development server:
 ```bash

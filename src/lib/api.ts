@@ -1,6 +1,6 @@
 import { Movie, MovieDetail, SearchResponse, SearchParams } from '@/types';
 
-const API_KEY = process.env.OMDB_API_KEY || 'demo';
+const API_KEY = process.env.NEXT_PUBLIC_OMDB_API_KEY || 'demo';
 const BASE_URL = 'https://www.omdbapi.com/';
 
 export async function searchMovies(params: SearchParams): Promise<SearchResponse> {
@@ -15,13 +15,13 @@ export async function searchMovies(params: SearchParams): Promise<SearchResponse
   const response = await fetch(`${BASE_URL}?${searchParams}`);
   
   if (!response.ok) {
-    throw new Error('Failed to fetch movies');
+    throw new Error('Failed to fetch!');
   }
 
   const data = await response.json();
   
   if (data.Response === 'False') {
-    throw new Error(data.Error || 'No movies found');
+    throw new Error(data.Error || 'No results found');
   }
 
   return data;

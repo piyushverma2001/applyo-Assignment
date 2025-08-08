@@ -85,7 +85,7 @@ export default function Home() {
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <h1 className="text-3xl font-bold text-gray-900 text-center mb-6">
-            Movie Explorer
+            Movie or Series Explorer
           </h1>
           <SearchBar onSearch={handleSearch} isLoading={loading} />
         </div>

@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Movie Explorer - Search & Browse Movies',
+  title: 'Content Explorer - Search & Browse Movies or Series',
   description: 'Search and browse movies and TV series using the OMDb API',
 }
 
